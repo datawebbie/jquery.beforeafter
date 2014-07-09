@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image slider test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.beforeafter-1.4.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#container-polar').beforeAfter({
+                    imagePath: 'img/',
+                    introDelay: 2000,
+                    introDuration: 500,
+                    showFullLinks: false
+                });
+                $('#container-ice').beforeAfter({
+                    imagePath: 'img/',
+                    introDelay: 2000,
+                    introDuration: 500,
+                    showFullLinks: false
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container-polar">
+            <div><img alt="before" src="img/Polar-Bear-SliderTest1.jpg" width="800" height="533" /></div>
+            <div><img alt="after" src="img/Polar-Bear-SliderTest2.jpg" width="800" height="533" /></div>
+        </div>
+        <p>&nbsp;</p>
+        <div id="container-ice">
+            <div><img alt="before" src="img/Ice-SliderTest1.jpg" width="800" height="533" /></div>
+            <div><img alt="after" src="img/Ice-SliderTest2.jpg" width="800" height="533" /></div>
+        </div>
+    </body>
+</html>
